@@ -1,4 +1,4 @@
-let name = "Harry"
+let name = "muku"
 // console.log(name.length)
 
 // console.log(name.toUpperCase())
@@ -11,7 +11,7 @@ let name = "Harry"
 // let friend2 = "      Meena        "
 // console.log(friend2)
 // console.log(friend2.trim())
-let fr = "Raman" + "Shivika" + "Harry"
+let fr = "Raman" + "Shivika" + "muku"
 console.log(fr[0])
 console.log(fr[1])
 console.log(fr[2])
