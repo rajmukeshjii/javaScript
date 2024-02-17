@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+   
+    width: 100%;
+    height: 100%;
+   
+    
+  }
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+  
+ 
+  
+  /* About Founder Section */
+  .about-founder {
+    
+    width: 100%;
+    height: 100%;
+  }
+  
+  .about-founder img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+  .info {
+    
+    width: 100%;
+    height: 100%;
+  }
+  
+  .info img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+
+  .timer {
+    
+    width: 100%;
+    height: 100%;
+  }
+  
+  .timer img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+
+  .register-section {
+    
+    width: 100%;
+    height: 100%;
+  }
+  
+  .register-section img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+
+  .offer {
+    
+    width: 100%;
+    height: 100%;
+  }
+  
+  .offer img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+  
+  
+  
+
+  
+  .why-choose-us h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .icon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* Countdown Timer Section */
+  .countdown-timer {
+    background-color: #fff;
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+  .countdown-timer h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #timer {
+    font-size: 36px;
+  }
+/* Media Query for All Screen Sizes */
+@media screen and (max-width: 1200px) {
+    .container {
+      padding: 0 15px; /* Adjust container padding for smaller screens */
+    }
+  
+    /* Adjust styles for the hero section */
+    .hero img,
+    .about-founder img,
+    .info img,
+    .timer img,
+    .register-section img,
+    .offer img {
+      height: auto; /* Set height to auto for images to maintain aspect ratio */
+    }
+  }
+  
+
+  
+  
+
+  
