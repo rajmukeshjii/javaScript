@@ -1,81 +1,131 @@
-/* Reset some default styling */
-body, h1, label {
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Montserrat:wght@400;700&family=Mulish:wght@300&family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background: linear-gradient(
+                    45deg,
+                    hsl(236, 100%, 80%, 0.2),
+                    rgba(205, 155, 225, 0.1)
+            );
+
+
+        }
+
+        img {
+            font-family: 'Lexend Deca', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            margin-top: 2rem;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 4.8rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+        }
+
+        label {
+            margin-top: 1rem;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        textarea {
+            padding: .2rem .5rem;
+        }
+
+        textarea:hover {
+            cursor: copy;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2.4rem;
+        }
+
+        /*------ Style 1 ------*/
+        .style1 {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 5rem;
+            height: 5rem;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .style1::-webkit-color-swatch {
+            border-radius: .5rem;
+            border: none;
+        }
+
+        .style1::-moz-color-swatch {
+            border-radius: .5rem;
+            border: none;
+        }
+
+        /* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .parent {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    label, select, input, textarea {
+        width: 100%;
+    }
+
+    .container {
+        align-items: center;
+        text-align: center;
+    }
+
+    textarea {
+        width: 100%;
+    }
 }
 
-/* General body styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
 
-/* Styling for the main section */
-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
+    label {
+        font-size: 1.6rem;
+    }
 
-/* Header styling */
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Styling for form controls */
-div {
-    margin-bottom: 15px;
-}
-
-/* Styling for labels */
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-/* Styling for select and input elements */
-select, input[type="text"], input[type="color"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-/* Styling for the textarea */
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-    resize: none;
-    color: #555;
-    background-color: #f9f9f9;
-}
-
-/* Container class for textarea */
-.container {
-    text-align: center;
-}
-
-/* Additional styling for the form elements container */
-.parent {
-    margin-bottom: 15px;
+    textarea {
+        font-size: 1.4rem;
+    }
 }
